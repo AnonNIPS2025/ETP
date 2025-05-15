@@ -22,7 +22,7 @@ ETP introduces a novel structured pruning method that applies exponentially incr
 | CIFAR-100 (Vision)  | VGG-19     | **9×**   | **-2.2%** |
 | SST-2 (NLU)         | BERT       | 11×      | -1.4%     |
 | PPI (Graph)         | GAT        | 12.16×   | -0.027 F1 |
-| ETTh1 (Time-Series) | Informer   | 25×      | +6.15 MAE |
+| ETTh1 (Time-Series) | Informer   | 25×      | +0.0615 MAE |
 | Flickr8k (VLM)      | BLIP       | 20% pruned | BLEU-4 drop: **-1.07** |
 
 ---
