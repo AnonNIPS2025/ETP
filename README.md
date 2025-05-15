@@ -17,7 +17,7 @@ ETP introduces a novel structured pruning method that applies exponentially incr
 
 ## 📊 Results Summary
 
-| Task                | Model      | Speed-up | Acc Drop |
+| Task                | Model      | Speed-up | Performance Drop |
 |---------------------|------------|----------|----------|
 | CIFAR-100 (Vision)  | VGG-19     | **9×**   | **-2.2%** |
 | SST-2 (NLU)         | BERT       | 11×      | -1.4%     |
