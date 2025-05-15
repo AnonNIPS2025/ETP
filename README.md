@@ -45,15 +45,14 @@ Traditional Torque-based pruning applies a linear penalty based on module distan
 
 ETP replaces the **linear distance-based force** with an **exponential decay function**:
 
-\[
-\mathcal{L}_{\text{ETP}} = \sum_{l} \sum_{i} \|w_i^l\|^2 \cdot \lambda^{d_i}
-\]
+L_ETP = Σₗ Σᵢ ‖wᵢˡ‖² · λ^(dᵢ)
 
 Where:
-- \( w_i^l \): Weights of the \(i^{th}\) module in layer \(l\)
-- \( d_i = \| \rho^l_i - \rho^l_p \| \): Distance to the pivot module
-- \( \lambda = \exp\left(\frac{5}{|G_l|}\right) \): Exponential base based on the number of grouped units (e.g., filters, heads) in the layer
-- \( \beta \): Regularization strength (tuned per model)
+
+- ‖wᵢˡ‖²: Squared L2-norm of the iᵗʰ module in layer l  
+- dᵢ = |ρᵢˡ − ρₚˡ|: Distance from pivot module  
+- λ = exp(5 / |Gₗ|): Exponential base per layer  
+- β: Regularization strength (tunable)
 
 
 
